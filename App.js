@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, FlatList, Text, View  } from 'react-native';
+import { StyleSheet, FlatList, Text, View, Alert  } from 'react-native';
 import { useState } from 'react';
 
 // Components
@@ -19,12 +19,19 @@ export default function App() {
     })
   }
   const submitHandler = (text) => {
-    setTodos((prevTodos) => {
-      return [
-        {text: text, key: Math.random().toString()},
-        ...prevTodos
-      ]
-    })
+
+    if(text.length > 1){
+      setTodos((prevTodos) => {
+        return [
+          {text: text, key: Math.random().toString()},
+          ...prevTodos
+        ]
+      })
+    } else {
+      Alert.alert('oops!', `You must write something.`, [
+        {text: 'Understood', onPress: () => console.log('alert closed')}
+      ])
+    }
   }
 
   return (
