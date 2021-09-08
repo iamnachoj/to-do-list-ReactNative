@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "GameReview",
-    "slug": "GameReview",
+    "name": "To do List app",
+    "slug": "To Do List",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
