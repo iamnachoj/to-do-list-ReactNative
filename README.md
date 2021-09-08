@@ -14,7 +14,7 @@ The easiest way to get started is to clone the repository:
 ### Change directory
 `cd to-do-list-ReactNative`
 ### Install NPM dependencies
-`npm install`
+> npm install
 ### run the app
 `expo start`
 
