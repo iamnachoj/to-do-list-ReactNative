@@ -1,4 +1,5 @@
 # to-do-list-ReactNative
+ My first practice proyect done with React Native: a great, performant todo list app that allows to add and remove tasks.
  
 ## Tools
  - NodeJS
